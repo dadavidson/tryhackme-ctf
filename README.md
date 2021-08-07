@@ -1,2 +1,2 @@
 # TryHackMe-CTF
-TryHackMe CTFs writeups, KOTH, notes, dratfs, scrabbles, files and solutions.
+TryHackMe CTFs writeups, KOTH, notes, dratfs, files and solutions.
