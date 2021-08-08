@@ -98,11 +98,11 @@ Difficulty: Easy
 
 	- `-rwsr-sr-x`
 
-Now, SSH into the machine as the user. List the directory to make sure the bash executable is there. Now, the moment of truth. Lets run it with "./bash -p". The -p persists the permissions, so that it can run as root with SUID- as otherwise bash will sometimes drop the permissions.
+- Now, SSH into the machine as the user. List the directory to make sure the bash executable is there. Now, the moment of truth. Lets run it with "./bash -p". The -p persists the permissions, so that it can run as root with SUID- as otherwise bash will sometimes drop the permissions.
 
 	  no answer needed
 
-Great! If all's gone well you should have a shell as root! What's the root flag?
+- Great! If all's gone well you should have a shell as root! What's the root flag?
 
 	- `********************`
 
