@@ -1,6 +1,6 @@
 # CTF Readiness Check Script
 
-### Script to auto tool provisioning and to troubleshoot connectivity to the TryHackMe network using OpenVPN on Linux.
+### Script to auto tool provision and to troubleshoot connectivity to the TryHackMe network using OpenVPN on Linux.
 Usage:
 * Download the `ctf-readinesscheck` script. Saving it to the same place as your OpenVPN configuration pack (`~/Downloads` by default) is advisable, but not essential.
 * In your Linux terminal, make the script executable with `chmod +x <path-to-script>`. If you downloaded the script to your Downloads folder, this will be `chmod +x ~/Downloads/ctf-readinesscheck.sh`.
