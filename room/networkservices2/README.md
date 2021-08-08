@@ -42,4 +42,26 @@ Difficulty: Easy
 
 	- `*.2`
 
+- Conduct a thorough port scan of your choosing, how man ports are open?
+
+	- `nmap -p- -A <TARGET_IP>`
+	- `7`
+	
+- Which port contains the service we're looking to enumerate?
+
+	- `2049`
+	
+- Now, use /usr/sbin/showmount -e [IP] to list the NFS shares, what is the name of the visible share?
+
+	- `/home`
+	
+- First, use *"mkdir /tmp/mount"* to create a directory on your machine to mount the share to. This is in the /tmp directory- so be aware that it will be removed on restart. Then, use the mount command we broke down earlier to mount the NFS share to your local machine. Change directory to where you mounted the share- what is the name of the folder inside?	
+	
+	- `sudo mount -t nfs <TARGET_IP>:/**** /tmp/mount -nolock`
+	- `cappucino`
+	
+- Have a look inside this directory, look at the files. Looks like  we're inside a user's home directory...
+
+	  no answer needed
+
 

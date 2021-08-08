@@ -1,1 +1,7 @@
+# TARGET
 10.10.55.118
+
+# showmount - visible shares
+sudo showmount -e 10.10.55.118
+Export list for 10.10.55.118:
+/home *
