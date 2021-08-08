@@ -2,11 +2,13 @@
 
 Difficulty: Easy
 
-## Task 1
+## Task 1 - Start finding
 
 - Read and follow the instructions.
 
 	  no answer needed
+
+## Task 2 - Be more specific
 
 - Find all files whose name ends with ".xml"
 
@@ -20,7 +22,7 @@ Difficulty: Easy
 
 	- `find / -type d -name "*exploits*"`
 
-## Task 2
+## Task 3 - Know exactly what you're looking for
 
 - Find all files owned by the user "kittycat"
 
@@ -58,7 +60,7 @@ Difficulty: Easy
 
 	- `find /usr/bin -type f -mmin -120`
 
-## Task 3
+## Task 4 - Have you found it?
 
 - You are now better equipped to find anything you’re looking for in a filesystem.
 
