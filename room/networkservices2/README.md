@@ -64,4 +64,17 @@ Difficulty: Easy
 
 	  no answer needed
 
+- Interesting! Let's do a bit of research now, have a look through the folders. Which of these folders could contain keys that would give us remote access to the server?
+
+	- `.ssh`
+
+- Which of these keys is most useful to us?
+
+	- `id_rsa`
+
+- Can we log into the machine using ssh -i <key-file> <username>@<ip> ? (Y/N)
+
+	- `chmod 600 id_rsa`
+	- `ssh -i id_rsa *********@<TARGET_IP>`
+	- `Y`
 
