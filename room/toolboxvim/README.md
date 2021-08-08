@@ -1,5 +1,7 @@
 # Toolbox: Vim
 
+Difficulty: Easy
+
 ## Task 1
 - Install Vim
 
