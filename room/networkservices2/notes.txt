@@ -1,7 +1,21 @@
 # TARGET
-10.10.55.118
+IP 	= 10.10.55.118
+USER	= cappucino
+PASS	= id_rsa
 
-# showmount - visible shares
-sudo showmount -e 10.10.55.118
-Export list for 10.10.55.118:
-/home *
+
+
+    NFS Access ->
+
+        Gain Low Privilege Shell ->
+
+            Upload Bash Executable to the NFS share ->
+
+                Set SUID Permissions Through NFS Due To Misconfigured Root Squash ->
+
+                    Login through SSH ->
+
+                        Execute SUID Bit Bash Executable ->
+
+                            ROOT ACCESS
+

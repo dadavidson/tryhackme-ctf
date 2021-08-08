@@ -42,6 +42,8 @@ Difficulty: Easy
 
 	- `*.2`
 
+## Task 3 - Enumerating NFS
+
 - Conduct a thorough port scan of your choosing, how man ports are open?
 
 	- `nmap -p- -A <TARGET_IP>`
@@ -77,4 +79,29 @@ Difficulty: Easy
 	- `chmod 600 id_rsa`
 	- `ssh -i id_rsa *********@<TARGET_IP>`
 	- `Y`
+	
+## Task 4 - Exploiting NFS
 
+- First, change directory to the mount point on your machine, where the NFS share should still be mounted, and then into the user's home directory.
+
+	  no answer needed
+
+- Download the bash executable to your Downloads directory. Then use "cp ~/Downloads/bash ." to copy the bash executable to the NFS share. The copied bash shell must be owned by a root user, you can set this using "sudo chown root bash"
+
+	  no answer needed
+
+- Now, we're going to add the SUID bit permission to the bash executable we just copied to the share using "sudo chmod +[permission] bash". What letter do we use to set the SUID bit set using chmod?
+
+	- `s`
+
+- Let's do a sanity check, let's check the permissions of the "bash" executable using "ls -la bash". What does the permission set look like? Make sure that it ends with -sr-x.
+
+	- `-rwsr-sr-x`
+
+Now, SSH into the machine as the user. List the directory to make sure the bash executable is there. Now, the moment of truth. Lets run it with "./bash -p". The -p persists the permissions, so that it can run as root with SUID- as otherwise bash will sometimes drop the permissions.
+
+	  no answer needed
+
+Great! If all's gone well you should have a shell as root! What's the root flag?
+
+	- `********************`
