@@ -1,7 +1,7 @@
 # TryHackMe-CTF
 
 TryHackMe CTFs writeups, notes, dratfs, files and solutions.
-<img src="https://tryhackme.com/img/illustrations/tryhackme_book_square.png" alt="tryhackme book" style="float:left;" width=100>
+<img src="https://tryhackme.com/img/illustrations/tryhackme_book_square.png" alt="tryhackme book" style="max-width:100%;float:right;" width=100>
 
 ### Table of Contents
 
