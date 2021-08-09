@@ -107,3 +107,89 @@ Difficulty: Easy
 	- `********************`
 
 ## Task 5 - Understanding SMTP
+
+- What does SMTP stand for?
+
+	- `Simple Mail Transfer Protocol`
+	
+- What does SMTP handle the sending of?
+
+	- `emails`
+
+- What is the first step in the SMTP process?
+
+	- `SMTP handshake`
+
+- What is the default SMTP port?
+
+	- `25`
+
+- Where does the SMTP server send the email if the recipient's server is not available?
+
+	- `smtp queue`
+
+- On what server does the Email ultimately end up on?
+
+	- `pop/imap`
+
+- Can a Linux machine run an SMTP server? (Y/N)
+
+	- `Y`
+
+- Can a Windows machine run an SMTP server? (Y/N)
+
+	- `Y`
+	
+## Task 6 - Enumerating SMTP
+
+- First, lets run a port scan against the target machine, same as last time. What port is SMTP running on?
+
+	- `nmap -A -p- <TARGET_IP>`
+	- `**`
+
+- Okay, now we know what port we should be targeting, let's start up Metasploit. What command do we use to do this?
+
+	- `msfconsole`
+
+- Let's search for the module `smtp_version`, what's it's full module name?
+
+	- `search smtp_version`
+	- `auxiliary/scanner/smtp/smtp_version`
+
+- Great, now- select the module and list the options. How do we do this?
+
+	- `options`
+
+- Have a look through the options, does everything seem correct? What is the option we need to set?
+
+	- `rhosts`
+
+- Set that to the correct value for your target machine. Then run the exploit. What's the system mail name?
+
+	- `polosmtp.home`
+
+- What Mail Transfer Agent (MTA) is running the SMTP server? This will require some external research.
+
+	- `postfix`
+
+- Good! We've now got a good amount of information on the target system to move onto the next stage. Let's search for the module `smtp_enum`, what's it's full module name?
+
+	- `search smtp_enum`
+	- `auxiliary/scanner/smtp/smtp_enum`
+
+- What option do we need to set to the wordlist's path?
+
+	- `user_file`
+
+- Once we've set this option, what is the other essential paramater we need to set?
+
+	- `RHOSTS`
+
+- Now, set the THREADS parameter to 16 and run the exploit, this may take a few minutes, so grab a cup of tea, coffee, water. Keep yourself hydrated!
+
+	  no answer needed
+
+- Okay! Now that's finished, what username is returned?
+
+	- `administrator`
+
