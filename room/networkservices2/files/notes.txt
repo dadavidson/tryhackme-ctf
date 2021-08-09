@@ -1,5 +1,0 @@
-# TARGET
-IP 	= 10.10.67.105
-RHOSTS	= polosmtp.home
-USER	= administrator
-

