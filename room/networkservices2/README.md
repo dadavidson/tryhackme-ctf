@@ -1,4 +1,4 @@
-# Network Services 2 (Draft)
+# Network Services 2
 
 Difficulty: Easy
 
