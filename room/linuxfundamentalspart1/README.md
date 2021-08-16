@@ -18,8 +18,8 @@ Difficulty: Info
 
 - Deploy the machine attached to this task!
 NOTE: If you have a machine open in the Welcome room (or any other room) please go to that room and terminate it before deploying the machine attached to this task. These machines are not the same, and only the one attached to this room will work.
-
-	no answer needed
+	
+	  no answer needed
 	
 ## Task 4 - Running Your First few Commands
 
@@ -58,8 +58,8 @@ NOTE: If you have a machine open in the Welcome room (or any other room) please 
 
 - And I still haven't found what I'm looking for!
 
-	no answer needed
-	
+	  no answer needed
+
 ## Task 7 - An Introduction to Shell Operators
 
 - If we wanted to run a command in the background, what operator would we want to use?
@@ -75,8 +75,8 @@ NOTE: If you have a machine open in the Welcome room (or any other room) please 
 	- `echo tryhackme >> passwords`
 	
 - Now use the deployed Linux machine to put these into practice
-
-	no answer needed
+	
+	  no answer needed
 
 ## Task 8 - Conclusions & Summaries
 
