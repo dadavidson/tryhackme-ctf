@@ -10,12 +10,10 @@ This is my write-up for the room [Simple CTF](https://tryhackme.com/room/easyctf
 
 
 ## Reconnaissance
----
 
 Target = `10.10.200.253`
 
 ## Enumeration / Scanning
----
 
 Let's start with an initial Nmap scan.
 
@@ -250,7 +248,6 @@ Upon visiting the URL path to exploit-db [https://www.exploit-db.com/exploits/46
 ![CMS made simple exploit-db info](https://danieldavidson.github.io/assets/images/posts/thm-easyctf-04.png)
 
 ## Gaining Access / Exploitation
----
 
 Once you've downloaded the python script be sure to use `chmod +x` like the example below:
 
@@ -297,7 +294,6 @@ $
 ```
 
 ## Maintaining Access / Priviledge Escalation
----
 
 Upon exploring the target we find a flag.
 
@@ -350,7 +346,6 @@ W3ll d0n3. You made it!
 ```
 
 ## Conclusion
----
 
 So what can we learn from this?
 
