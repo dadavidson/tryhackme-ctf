@@ -1,0 +1,5 @@
+200      375l      968w    11321c http://10.10.200.253/index.html
+200       32l      141w      929c http://10.10.200.253/robots.txt
+301        9l       28w      315c http://10.10.200.253/simple
+301        9l       28w      321c http://10.10.200.253/simple/admin
+301        9l       28w      322c http://10.10.200.253/simple/assets
