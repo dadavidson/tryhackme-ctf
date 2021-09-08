@@ -219,7 +219,7 @@ Nothing really in the `robots.txt` file that stands out.
 
 Moving forward we have a directory called `simple` that returned a successful web response code from our scan earlier. Upon visiting that directory we are greeted with a web page that hosts a CMS (Content Management System) called ***CMS Made Simple***. 
 
-![CMS made simple web page](https://danieldavidson.github.io/assets/images/posts/thm-easyctf-01.png
+![CMS made simple web page](https://danieldavidson.github.io/assets/images/posts/thm-easyctf-01.png)
 
 Just from browsing the page a little bit we also deduce some other information such as users active and version info on the CMS. This is called ***low-tech hacking***.
 
