@@ -6,4 +6,3 @@ TryHackMe CTFs notes, dratfs, files and brain dumps.
 ### Table of Contents
 
 - [/room](https://github.com/danieldavidson/tryhackme-ctf/tree/main/room) - TryHackMe notes organized by room name
-- [/koth](https://github.com/danieldavidson/tryhackme-ctf/tree/main/koth) - TryHackMe koth dump organized by name (**No writeups! That wouldn't be fun.**)
