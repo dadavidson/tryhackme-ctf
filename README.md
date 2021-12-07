@@ -1,6 +1,6 @@
 # TryHackMe-CTF
 
-TryHackMe CTFs writeups, notes, dratfs, files and solutions.
+TryHackMe CTFs notes, dratfs, files and brain dumps.
 <img src="https://tryhackme.com/img/illustrations/tryhackme_book_square.png" alt="tryhackme book" align="right" width=150>
 
 ### Table of Contents
